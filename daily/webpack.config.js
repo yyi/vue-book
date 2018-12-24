@@ -2,6 +2,7 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var config = {
+    devtool: "#eval-source-map",
     entry: {
         main: './main'
     },

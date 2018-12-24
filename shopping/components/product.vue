@@ -47,8 +47,9 @@
         text-align: center;
         position: relative;
     }
-    .product-main img{
+    .product-main img {
         width: 100%;
+        height: 275px;
     }
     h4{
         color: #222;

@@ -12,7 +12,7 @@
         </div>
         <div class="product-desc">
             <h2>产品介绍</h2>
-            <img v-for="n in 10" :src="'http://ordfm6aah.bkt.clouddn.com/shop/' + n + '.jpeg'">
+            <img v-for="n in 9" :src="'http://img.ivsky.com/img/tupian/pre/201711/30/geshigeyangdetoudaishierjitupian-00' + n + '.jpg'">
         </div>
     </div>
 </template>
