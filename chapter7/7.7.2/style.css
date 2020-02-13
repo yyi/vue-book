@@ -22,12 +22,12 @@
   cursor:pointer;
   position:relative;
 }
-.tabs-bar-acitve{
+.tabs-tab-active{
   color:#3399ff;
   border-top:1px solid #3399ff;
   border-bottom: 1px solid #fff;
 }
-.tabs-bar-acitve:before{
+.tabs-tab-active:before{
   content: '';
   display: block;
   height: 1px;
