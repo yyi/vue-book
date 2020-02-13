@@ -4,7 +4,7 @@
 Vue.component('tabs',{
   template:'<div class="tabs">' +
               '<div class="tabs-bar">' +
-                '<div :class="tabCls[item]" v-for="(item,index) in navList" @click="handleChange(index)">{{item.label}}</div>'+
+                '<div :class="tabCls(item)" v-for="(item,index) in navList" @click="handleChange(index)">{{item.label}}</div>'+
               '</div>' +
               '<div class="tabs-content"><slot></slot></div>' +
             '</div>',
@@ -69,14 +69,14 @@ Vue.component('tabs',{
       this.$emit('input',name);
 
       this.$emit('on-click',name);
+    }
+  },
+  watch:{
+    value:function (val) {
+      this.currentValue=val;
     },
-    watch:{
-      value:function (val) {
-        this.currentValue=val;
-      },
-      currentValue:function () {
-        this.updateStatus();
-      }
+    currentValue:function () {
+      this.updateStatus();
     }
   }
 
